@@ -1,2 +1,2 @@
 # Finite-element-method
-finite element method for solving second order differential equations
+Реализация метода конечных элементов (функция формы - линейная) для решения неоднордных дифференциальных уравнений вида Au''+bu' + cu + d = 0.
