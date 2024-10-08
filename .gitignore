@@ -27,8 +27,22 @@
 *.lib
 
 *.pdb
+*.tlog
+*.idb
+*.ilk
+*.log
+*.recipe
+*.json
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.suo
+*.ipch
+*.vsidx
 
 # Executables
 *.exe
 *.out
 *.app
+

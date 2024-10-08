@@ -19,11 +19,11 @@ void GlobalSystem::Assemble(const Element& element, const std::array<int, 2>& no
 	}
 }
 
-void GlobalSystem::ApplyBoundaryConditions(int nodeIndex, std::pair<std::string, double>& condition, SecondOrderDifferentialEq& eq) {
+void GlobalSystem::ApplyBoundaryConditions(int nodeIndex, std::pair<BoundaryConditions, double>& condition, SecondOrderDifferentialEq& eq) {
     int n = StiffnessMatrix.size();
     double value = condition.second;
 
-    if (condition.first == "Dirichlet")
+    if (condition.first == BoundaryConditions::Dirichlet)
     {
         for (int i = 0; i < n; ++i) {
             StiffnessMatrix[nodeIndex][i] = 0.0;
@@ -31,7 +31,7 @@ void GlobalSystem::ApplyBoundaryConditions(int nodeIndex, std::pair<std::string,
         StiffnessMatrix[nodeIndex][nodeIndex] = 1.0;
         LoadVector[nodeIndex] = value;
     }
-    else if (condition.first == "Neyman")
+    else if (condition.first == BoundaryConditions::Neyman)
     {
         if (nodeIndex == 0) {
             LoadVector[nodeIndex] += eq.getA() * value;
@@ -41,7 +41,7 @@ void GlobalSystem::ApplyBoundaryConditions(int nodeIndex, std::pair<std::string,
             LoadVector[nodeIndex] -= eq.getA() * value;
         }
     }
-    else if (condition.first == "Robin")
+    else if (condition.first == BoundaryConditions::Robin)
     {
         StiffnessMatrix[nodeIndex][nodeIndex] += 1 * value;
     }

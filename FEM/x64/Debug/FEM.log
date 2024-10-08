@@ -1,2 +1,13 @@
-﻿  main.cpp
-  FEM.vcxproj -> C:\Users\Андрей\source\repos\FEM\x64\Debug\FEM.exe
+﻿  Element.cpp
+  FiniteElementSolver.cpp
+C:\Users\Андрей\Finite-element-method\FEM\FiniteElementSolver.cpp(17,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Андрей\Finite-element-method\FEM\FiniteElementSolver.cpp(32,62): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  GlobalSystem.cpp
+C:\Users\Андрей\Finite-element-method\FEM\GlobalSystem.cpp(23,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Андрей\Finite-element-method\FEM\GlobalSystem.cpp(123,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  Mesh.cpp
+  ThomasAlgorithm.cpp
+C:\Users\Андрей\Finite-element-method\FEM\ThomasAlgorithm.cpp(7,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  FEM.vcxproj -> C:\Users\Андрей\Finite-element-method\x64\Debug\FEM.exe

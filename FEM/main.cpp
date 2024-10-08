@@ -9,13 +9,13 @@ int main()
 	double x_start = -3;
 	double x_end = 2;
 
-	std::pair<std::string, double> left;
-	std::pair<std::string, double> right;
+	std::pair<BoundaryConditions, double> left;
+	std::pair<BoundaryConditions, double> right;
 
-	left.first = "Neyman";
+	left.first = BoundaryConditions::Neyman;
     left.second = 5;
 
-	right.first = "Dirichlet";
+	right.first = BoundaryConditions::Dirichlet;
 	right.second = 10;
 
 	SecondOrderDifferentialEq equation = SecondOrderDifferentialEq(2, -3, 0, 12);

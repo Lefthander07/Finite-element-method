@@ -24,7 +24,7 @@ void FiniteElementSolver::AssembleGlobalMatrix()
     }
 }
 
-void FiniteElementSolver::ApplyBoundaryConditions(std::pair<std::string, double>& left, std::pair<std::string, double>& right) 
+void FiniteElementSolver::ApplyBoundaryConditions(std::pair<BoundaryConditions, double>& left, std::pair<BoundaryConditions, double>& right)
 {
     //globalSystem->ApplyBoundaryConditions(0, 10);                              // u(1) = 0
     //globalSystem->ApplyBoundaryConditions(mesh->Nodes.size() - 1, 1.0);  // u(12) = 1

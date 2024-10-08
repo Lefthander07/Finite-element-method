@@ -12,7 +12,7 @@ public:
 
 	GlobalSystem(int numberOfNodes);
 	void Assemble(const Element& element, const std::array<int, 2>& nodeIndices);
-	void ApplyBoundaryConditions(int nodeIndex, std::pair<std::string, double>& condition, SecondOrderDifferentialEq& eq);
+	void ApplyBoundaryConditions(int nodeIndex, std::pair<BoundaryConditions, double>& condition, SecondOrderDifferentialEq& eq);
 	void Solve();
 	void Print();
 };
