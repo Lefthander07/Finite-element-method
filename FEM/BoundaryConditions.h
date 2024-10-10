@@ -1,9 +1,9 @@
-#pragma once
-
-enum class BoundaryConditions
-{
-	Dirichlet,
-	Neyman,
-	Robin
-};
+//#pragma once
+//
+//enum class BoundaryConditions
+//{
+//	Dirichlet,
+//	Neyman,
+//	Robin
+//};
 

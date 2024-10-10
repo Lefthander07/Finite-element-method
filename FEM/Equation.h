@@ -7,6 +7,12 @@ enum class BoundaryConditions
 	Robin
 };
 
+enum class FormFunction
+{
+	Linear,
+	Cubic
+};
+
 class SecondOrderDifferentialEq
 {
 private:
